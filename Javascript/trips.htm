@@ -1,0 +1,60 @@
+<!--/**************************************************************************
+ * (C) Copyright 2012-2014 by Ryan Stone. All Rights Reserved.                *
+ *                                                                            *
+ **************************************************************************/-->
+
+<html>
+<head>
+<title>Trips</title>
+
+<script language = "JavaScript">
+
+<!--hide me from older browsers
+
+newWindow = new Object;
+newWindow.closed = true;
+
+function newWindowopener(title, word1, word2, word3, cc, cc2, cc3, cc4, cc5, cc6, cc7, cc8, ca, ca2, ca3, ca4, ca5, ca6, ca7, ca8)
+{
+if (!newWindow.closed)
+	{
+	newWindow.close();
+	}
+
+newWindow = window.open("", "", "height = 350, width = 500, scrollbars, resizable");
+
+newWindow.document.write("<HTML><CENTER><HEAD><TITLE>");
+        newWindow.document.write(title);
+	newWindow.document.write("</TITLE>");
+	newWindow.document.writeln("</HEAD><BODY BGCOLOR = #ffffff>");
+
+newWindow.document.writeln("<H1>" + word1 + "</H1>");
+newWindow.document.writeln("<H2>" + word2 + "</H2><HR>");
+newWindow.document.writeln("<B>" + word3 + "</B");
+
+newWindow.document.writeln("<table width='250' border='0' cellspacing='10' cellpadding='0'><tr>");
+        newWindow.document.writeln("<TD>" + cc + "</TD><TD>" + cc2 + "</TD><TD>" + cc3 + "</TD><TD>" + cc4 + "</TD>");
+        newWindow.document.writeln("<TD>" + cc5 + "</TD><TD>" + cc6 + "</TD><TD>" + cc7 + "</TD><TD>" + cc8 + "</TD>");
+        newWindow.document.writeln("</TR><TR>");
+        newWindow.document.writeln("<TD>" + ca + "</TD><TD>" + ca2 + "</TD><TD>" + ca3 + "</TD><TD>" + ca4 + "</TD>");
+        newWindow.document.writeln("<TD>" + ca5 + "</TD><TD>" + ca6 + "</TD><TD>" + ca7 + "</TD><TD>" + ca8 + "</TD>");
+        newWindow.document.writeln("</tr></table>");
+
+newWindow.document.writeln("<FORM><INPUT TYPE = \"BUTTON\" VALUE=\"Close\" onClick= \"self.close()\">");
+	newWindow.document.writeln("</FORM>");
+	newWindow.document.close();
+	newWindow.focus();
+}
+
+// show me -->
+</script>
+</head>
+<body>
+<center>
+<h1>Welcome to the Student Discount Travel Service</h1><br>
+<h2>For Those Who Would Rather Be Anyplace Else Than School</h2>
+<hr></center>
+<a href = "#" onClick = "newWindowopener('Exchange','Welcome to the Student Discount Travel Service', 'For Those Who Would Rather Be Anyplace Else Than School','Currency Converter','Aust','UK','Can','DMark','FFRanc','Yen','SFranc','Euro','0.9642','0.6199','1.0002','0.7716','0.7716','79.813  ','0.9317','0.7716'); return false;">How much is your dollar worth?</a><br>
+  
+</body>
+</html>

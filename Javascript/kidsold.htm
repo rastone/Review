@@ -1,0 +1,49 @@
+<!--/**************************************************************************
+ * (C) Copyright 2012-2014 by Ryan Stone. All Rights Reserved.                *
+ *                                                                            *
+ **************************************************************************/-->
+
+<html>
+<head>
+<title>Kids Club</title>
+<script type = "text/javascript">
+function open_page2()
+{
+window.location("kidsnew.htm")
+}
+</script>
+</head>
+<body>
+<center><strong>
+<script type = "text/javascript">
+var now = new Date();
+var yyyy = now.getFullYear();
+var mm = now.getMonth() + 1;
+if (10 > mm) mm = '0' + mm;
+var dd = now.getDate();
+if (10 > dd) dd = '0' + dd;
+document.write("Todays Date is " + mm + '/' + dd + '/' + yyyy + " ");
+</script>
+<img src="kids_club_logo.jpg" width="351" height="141" alt="Kids Club Logo"><script type = "text/javascript">
+var now = new Date();
+var hour = now.getHours();
+var mins = now.getMinutes();
+var secs = now.getSeconds();
+if(mins<10) mins="0"+mins;
+if(secs<10) secs="0"+secs;
+// convert 24 hout times to 12 hour AM/PM output.
+if (hour>=13)
+time_now=(hour-12)+":"+mins+":"+secs;
+	else
+time_now=hour+":"+mins+":"+secs;
+document.write(" The time is " + time_now);
+</script><br><br>
+<a href = "kidsnew.htm"
+  onMouseOver = "swapit.src = 'gtkc_2.jpg';"
+  onMouseOut = "swapit.src = 'gtkc_1.jpg';">
+    <img src = "gtkc_1.jpg" name = "swapit" alt = "Go to Kids Club" border="0">
+</a>
+</strong>
+</center>
+</body>
+</html>

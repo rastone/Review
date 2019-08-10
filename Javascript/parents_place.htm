@@ -1,0 +1,35 @@
+<!--/**************************************************************************
+ * (C) Copyright 2012-2014 by Ryan Stone. All Rights Reserved.                *
+ *                                                                            *
+ **************************************************************************/-->
+
+<html>
+<head>
+<title>Getting Centered Functionally</title>
+<script type = "text/javascript">
+<!-- hide me from older browsers
+function openAndCenterWindow(the_url)
+{
+	if ((parseInt(navigator.appVersion) > 3) &&
+		(navigator.appName == "Netscape"))
+	{
+		var the_window =
+		  window.open(the_url,'the_window','height=200,width=200');
+		var screen_height = window.screen.availHeight;
+		var screen_width = window.screen.availWidth;
+		var left_point = parseInt(screen_width / 2) - 100;
+		var top_point = parseInt(screen_height / 2) - 100;
+		the_window.moveTo(left_point, top_point);
+	}
+}
+// show me -->
+</script>
+</head>
+<body>
+<a href = "#"
+  onClick = "openAndCenterWindow('http://webmonkey.com/'); return false;"> Click me to put the Webmonkey home page in a small centered window</a>
+<p><a href = "#"
+  onClick = "openAndCenterWindow('http://nostarch.com/'); return false;"> Click to put the No Starch home page in a small centered window</a>
+
+</body>
+</html>
